@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* * Utilizar plugins para Tailwind, creados por fuera */
+@plugin "@midudev/tailwind-animations"; 
+
+
+/*! Para agregar el tema, se creo la asociación de css con tailwind en la carpeta de .VSCODE */
+/* * Agregar fuente personalizada y poder utilizarla en Tailwind */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+@theme {
+  /* Colores */
+  --color-primary: #09f;
+  --color-primary-light: #09f;
+  --color-primary-dark: #000;
+  --color-santi: #45433f;
+
+  /* Fuentes */
+  /* --font-sans:'Montserrat', 'system-ui', 'sans-serif'; !!Sobre escribir fuente que ya esta en Tailwind */
+  --font-sans:'Display', 'system-ui', 'sans-serif'; /* Nombre personalizado*/
+
+
+  /* Breakpoints */
+  --breakpoint-xs: 350px;
+}
